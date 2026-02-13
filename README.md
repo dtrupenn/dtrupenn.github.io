@@ -46,8 +46,42 @@ npm run preview
 
 This repository is named `dtrupenn.github.io`, so it is a user site repo and should publish from the default branch.
 
-1. Run:
-   ```bash
-   npm run build
-   ```
-2. Commit and push.
+### 1. Workflow file
+
+This repo includes a GitHub Actions workflow at:
+
+- `.github/workflows/deploy.yml`
+
+It runs on pushes to `main` (or manual dispatch), then:
+
+1. Installs dependencies with `npm ci`
+2. Builds with `npm run build`
+3. Uploads `dist/`
+4. Deploys with `actions/deploy-pages`
+
+### 2. Enable Pages in repository settings
+
+In GitHub for this repository:
+
+1. Open `Settings -> Pages`
+2. Under **Build and deployment**, set **Source** to `GitHub Actions`
+
+### 3. Deploy
+
+Push to `main`:
+
+```bash
+git add .
+git commit -m "$COMMIT"
+git push origin main
+```
+
+After the workflow completes, your site will be live at:
+
+- `https://dtrupenn.github.io/`
+
+### 4. Manual trigger (optional)
+
+You can also run the workflow from:
+
+- `Actions -> Deploy to GitHub Pages -> Run workflow`
