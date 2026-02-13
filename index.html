@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dan Trujillo| Personal Site</title>
+    <meta
+      name="description"
+      content="Personal website for Dan Trujillo: software projects, background, and contact links."
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.js"></script>
+    <style>
+      body {
+        font-family: "JetBrains Mono", monospace;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-100">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-slate-900 via-slate-950 to-black"></div>
+
+    <header class="mx-auto max-w-5xl px-6 py-8">
+      <nav class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-700 pb-4">
+        <a href="#" class="text-lg font-bold tracking-wide">dtrupenn.github.io</a>
+        <ul class="flex items-center gap-5 text-sm text-slate-300">
+          <li><a class="hover:text-white" href="#about">About</a></li>
+          <li><a class="hover:text-white" href="#experience">Experience</a></li>
+          <li><a class="hover:text-white" href="#links">Links</a></li>
+          <li><a class="hover:text-white" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="mx-auto max-w-5xl px-6 pb-16">
+      <section class="py-10">
+        <p class="text-sm uppercase tracking-[0.25em] text-emerald-400">Personal Site</p>
+        <h1 class="mt-3 text-4xl font-bold leading-tight text-white sm:text-5xl">
+          Dan Trujillo
+        </h1>
+        <p class="mt-6 max-w-2xl text-base leading-7 text-slate-300">
+          I work and build software with a focus on backend systems, web applications, and high performance systems.
+        </p>
+      </section>
+
+      <section id="about" class="mt-8 rounded-xl border border-slate-800 bg-slate-900/70 p-6">
+        <h2 class="text-2xl font-semibold text-white">About</h2>
+        <p class="mt-4 leading-7 text-slate-300">
+          I focus on backend systems, web applications, and product-minded engineering. I care about readable code, reliable delivery, and building systems with product impact.
+        </p>
+      </section>
+
+      <section id="experience" class="mt-8 rounded-xl border border-slate-800 bg-slate-900/70 p-6">
+        <h2 class="text-2xl font-semibold text-white">Experience</h2>
+        <div class="mt-5 space-y-4 text-slate-200">
+          <article class="rounded-lg border border-slate-700 p-4">
+            <h3 class="text-lg font-semibold text-white">Datadog</h3>
+            <p class="mt-1 text-sm text-slate-400">Engineering Manager (July 2023 - Present)</p>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Engineering Manager for the Datadog Google Cloud Integration team, responsible for the team's roadmap, technical direction, and product strategy.
+            </p>
+          </article>
+          <article class="rounded-lg border border-slate-700 p-4">
+            <h3 class="text-lg font-semibold text-white">Latch</h3>
+            <p class="mt-1 text-sm text-slate-400">Engineering Manager (Nov 2021 - July 2023)</p>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Managed teams of 2-5 engineers across multiple continents providing services to multi-family buildings.
+            </p>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Managed and tech led the productionalization of several products to facilitate the utilization of building services across hundreds of buildings [Java, Spring, ECS, RDS, Terraform, Typescript]
+            </p>
+          </article>
+          <article class="rounded-lg border border-slate-700 p-4">
+            <h3 class="text-lg font-semibold text-white">Xandr</h3>
+            <p class="mt-1 text-sm text-slate-400">Engineering Manager (Nov 2017 - Nov 2021)</p>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Managed teams of 2-7 engineers to provide CI/CD and infrastructure solutions to an org of 500+ engineers.
+            </p>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Tech led efforts to increase confidence and reduce CI/CD time via Docker Base Images, Artifact Promotion, and simplified Pipeline Yaml interface facilitating CI/CD adoption. [Docker, Concourse, Spinnaker]
+            </p>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Tech led deletion of redundant services and automating provisioning of Terabyte MySQL DBs and sharding Petabytes of log level data leading to millions of dollars in hardware savings. [Mysql, Hadoop, Python]
+            </p>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Led Kubernetes conversion of real time stack (30+ C/Java/Go apps) for internal and client facing integration environments, reducing infrastructure requirements and increasing testability. [Kubernetes, Python]
+            </p>
+          </article>
+          <article class="rounded-lg border border-slate-700 p-4">
+            <h3 class="text-lg font-semibold text-white">AppNexus</h3>
+            <p class="mt-1 text-sm text-slate-400">Software Engineer (July 2013 - Nov 2017)</p>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Implemented services in Flask for facilitating the management of thousands of ephemeral testing environments running hundreds of containers. [Python, Kubernetes, ReactJS, PostgreSQL]
+            </p>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Wrote custom tools to automate lifecycle management of product environments and bespoke infrastructure. [Python, Docker, Bash, Jenkins]
+            </p>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Developed and maintained tools and APIs to manage internal cloud infrastructure for thousands of servers across multiple data centers. [PHP, Python, PostgreSQL]
+            </p>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Optimized and wrote job schedulers capable of running hundreds of thousands of jobs for cluster management, container management systems, and build/delivery automations. [Python, Java, Postgresql]
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- <section id="projects" class="mt-8 rounded-xl border border-slate-800 bg-slate-900/70 p-6">
+        <h2 class="text-2xl font-semibold text-white">Projects</h2>
+        <div class="mt-5 grid gap-4 sm:grid-cols-2">
+          <article class="rounded-lg border border-slate-700 p-4">
+            <h3 class="text-lg font-semibold">dtrupenn.github.io</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Personal portfolio and profile site.
+            </p>
+          </article>
+          <article class="rounded-lg border border-slate-700 p-4">
+            <h3 class="text-lg font-semibold">Open Source Work</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Selected repos including utilities, experiments, and production-supporting scripts.
+            </p>
+          </article>
+        </div>
+      </section> -->
+
+      <section id="links" class="mt-8 rounded-xl border border-slate-800 bg-slate-900/70 p-6">
+        <h2 class="text-2xl font-semibold text-white">Links</h2>
+        <ul class="mt-4 space-y-2 text-slate-200">
+          <li>
+            GitHub:
+            <a
+              href="https://github.com/dtrupenn"
+              class="text-emerald-400 hover:text-emerald-300"
+              target="_blank"
+              rel="noreferrer"
+              >github.com/dtrupenn</a
+            >
+          </li>
+          <li>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/dtrupenn/"
+              class="text-emerald-400 hover:text-emerald-300"
+              target="_blank"
+              rel="noreferrer"
+              >linkedin.com/in/dtrupenn/</a
+            >
+          </li>
+          <li>
+            Reference site:
+            <a
+              href="https://github.com/dtrupenn/dtrupenn1_site"
+              class="text-emerald-400 hover:text-emerald-300"
+              target="_blank"
+              rel="noreferrer"
+              >dtrupenn1_site</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="mt-8 rounded-xl border border-slate-800 bg-slate-900/70 p-6">
+        <h2 class="text-2xl font-semibold text-white">Contact</h2>
+        <p class="mt-4 text-slate-300">
+          The best way to connect is through LinkedIn or GitHub.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
